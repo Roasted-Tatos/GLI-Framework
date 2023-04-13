@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: bfbc17f357ac26c4690b0987c907dfd0, type: 2}
 --- !u!4 &6824211 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 54d251628e7924e3c8b42a06f1533e55, type: 3}
@@ -232,6 +232,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 892138720}
   - {fileID: 2068087245}
@@ -267,6 +268,7 @@ Transform:
   m_LocalRotation: {x: 0.7157312, y: -0.29182276, z: 0.05745773, w: 0.6318757}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1425958425}
   m_RootOrder: 5
@@ -1197,6 +1199,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (49)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -1217,7 +1223,7 @@ GameObject:
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!224 &48605867
@@ -1230,6 +1236,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1499911900}
   m_RootOrder: 0
@@ -1259,7 +1266,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300074, guid: 6bd0f56a86a1848f79e3c884b14c5c68, type: 3}
+  m_Sprite: {fileID: 21300022, guid: 6bd0f56a86a1848f79e3c884b14c5c68, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1554,6 +1561,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: -0.0000003874302}
   m_LocalPosition: {x: 1.1114761, y: 11.84, z: -4.16}
   m_LocalScale: {x: 1.1961709, y: 1.1961709, z: 1.1961709}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1545204208}
   m_RootOrder: 74
@@ -1569,6 +1577,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2095,6 +2104,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -0.13853264, y: 11.84, z: -3.16}
   m_LocalScale: {x: 1.1961709, y: 1.1961709, z: 1.1961709}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1545204208}
   m_RootOrder: 73
@@ -2110,6 +2120,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2437,6 +2448,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (53)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -2705,6 +2720,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (95)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2991,6 +3010,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (94)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3282,6 +3305,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (174)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3753,6 +3780,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (91)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4837,6 +4868,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (40)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -4900,6 +4935,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (92)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5214,6 +5253,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -6.2793303, y: -4.7025065, z: -4.1270294}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1025735988755125088}
   - {fileID: 1220710911207289265}
@@ -5404,6 +5444,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.0000028014183}
   m_LocalPosition: {x: -6.62, y: -4.2170467, z: -7.23}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1201793681}
   m_RootOrder: 20
@@ -5419,6 +5460,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -6285,6 +6327,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (47)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -6584,6 +6630,10 @@ PrefabInstance:
       value: Floor (2)
       objectReference: {fileID: 0}
     - target: {fileID: 2820461447547739449, guid: b0d5fd608489ca645a1755fee918d370, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820461447547739449, guid: b0d5fd608489ca645a1755fee918d370, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -6845,6 +6895,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4394846669326472106}
   - {fileID: 1014844582}
@@ -6942,6 +6993,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (168)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7045,6 +7100,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.63, z: -2.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1425958425}
   m_RootOrder: 8
@@ -7571,6 +7627,7 @@ Transform:
   m_LocalRotation: {x: 0.00059222034, y: 0.99224854, z: -0.12417661, w: 0.004759636}
   m_LocalPosition: {x: 0, y: 9.516953, z: 23.146809}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -7744,6 +7801,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (179)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8666,6 +8727,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (17)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -8867,6 +8932,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.0000028014183}
   m_LocalPosition: {x: -0.62, y: -4.2170467, z: -7.23}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1201793681}
   m_RootOrder: 18
@@ -8882,6 +8948,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -8978,6 +9045,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (83)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9228,6 +9299,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (36)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -9364,6 +9439,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (178)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9704,6 +9783,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: -0.0000003874302}
   m_LocalPosition: {x: 1.1114761, y: 11.09, z: -4.1215377}
   m_LocalScale: {x: 1.1961709, y: 1.1961709, z: 1.1961709}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1545204208}
   m_RootOrder: 71
@@ -9719,6 +9799,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -10442,6 +10523,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (176)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -10649,6 +10734,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (169)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11021,6 +11110,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11548,6 +11641,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (38)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -11611,6 +11708,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (81)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11968,6 +12069,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (96)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -12114,6 +12219,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12389,6 +12498,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (170)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12919,6 +13032,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 11.25, z: 31.93}
   m_LocalScale: {x: 1, y: 0.74812, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1425958425}
   m_RootOrder: 1
@@ -13873,6 +13987,7 @@ Transform:
   m_LocalRotation: {x: -0.50000036, y: 0.50000036, z: -0.4999996, w: -0.49999967}
   m_LocalPosition: {x: -0.27, y: 14.65, z: -10.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1425958425}
   m_RootOrder: 7
@@ -13997,6 +14112,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (97)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -14156,6 +14275,10 @@ PrefabInstance:
     - target: {fileID: 2820461447547739449, guid: b0d5fd608489ca645a1755fee918d370, type: 3}
       propertyPath: m_Name
       value: Floor (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820461447547739449, guid: b0d5fd608489ca645a1755fee918d370, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2820461447547739449, guid: b0d5fd608489ca645a1755fee918d370, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -14423,6 +14546,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (88)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -17350,6 +17477,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (42)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -17734,6 +17865,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 4.200001, z: -14.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1935003075}
   - {fileID: 956822330}
@@ -17955,6 +18087,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -18320,6 +18456,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (54)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -18502,6 +18642,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 3.95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2068087245}
   m_RootOrder: 38
@@ -18531,6 +18672,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -18700,6 +18842,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (163)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20249,6 +20395,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (84)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -20713,6 +20863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -20745,6 +20896,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -20950,6 +21102,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -21546,6 +21702,10 @@ PrefabInstance:
     - target: {fileID: 2820461447547739449, guid: b0d5fd608489ca645a1755fee918d370, type: 3}
       propertyPath: m_Name
       value: Floor (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820461447547739449, guid: b0d5fd608489ca645a1755fee918d370, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2820461447547739449, guid: b0d5fd608489ca645a1755fee918d370, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -22270,6 +22430,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (85)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -22578,6 +22742,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -0.13853264, y: 11.09, z: -3.1215386}
   m_LocalScale: {x: 1.1961709, y: 1.1961709, z: 1.1961709}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1545204208}
   m_RootOrder: 69
@@ -22593,6 +22758,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -22659,6 +22825,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: -0.0000003874302}
   m_LocalPosition: {x: 3.503806, y: 11.84, z: -4.16}
   m_LocalScale: {x: 1.1961709, y: 1.1961709, z: 1.1961709}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1545204208}
   m_RootOrder: 72
@@ -22674,6 +22841,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -22757,6 +22925,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 11.09, z: 32.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1425958425}
   m_RootOrder: 0
@@ -22852,6 +23021,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -23599,6 +23772,7 @@ Transform:
   m_LocalRotation: {x: -0.2975727, y: -0, z: -0, w: 0.9546992}
   m_LocalPosition: {x: -0.195, y: 10.64, z: 29.63}
   m_LocalScale: {x: 2.4882, y: 2.4882007, z: 2.4882007}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1425958425}
   m_RootOrder: 3
@@ -23800,6 +23974,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -24067,6 +24245,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -24411,6 +24593,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (173)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -25200,6 +25386,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (166)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -25339,6 +25529,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (90)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -25393,6 +25587,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.0000015199184}
   m_LocalPosition: {x: -3.77, y: 0, z: -7.5}
   m_LocalScale: {x: 1, y: 0.5, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 622122273}
   - {fileID: 149937634}
@@ -25885,6 +26080,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -26531,6 +26730,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (44)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -26734,6 +26937,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (167)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -26989,6 +27196,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.70710593, z: -0, w: 0.70710766}
   m_LocalPosition: {x: -7.75, y: -4.2170467, z: -5.76}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1201793681}
   m_RootOrder: 23
@@ -27004,6 +27212,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -27102,6 +27311,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (82)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -27165,6 +27378,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -27633,6 +27850,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -28239,6 +28460,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (50)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -28593,6 +28818,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (28)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -28626,6 +28855,7 @@ Transform:
   m_LocalRotation: {x: -0.7933533, y: -0.0000019967556, z: 0.000002115965, w: -0.60876155}
   m_LocalPosition: {x: -3.62, y: -4.217038, z: -7.23}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1201793681}
   m_RootOrder: 16
@@ -28641,6 +28871,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -28753,6 +28984,10 @@ PrefabInstance:
     - target: {fileID: 2820461447547739449, guid: b0d5fd608489ca645a1755fee918d370, type: 3}
       propertyPath: m_Name
       value: Floor (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820461447547739449, guid: b0d5fd608489ca645a1755fee918d370, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2820461447547739449, guid: b0d5fd608489ca645a1755fee918d370, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -29006,6 +29241,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (20)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -29140,6 +29379,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (39)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -29203,6 +29446,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (172)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -29343,6 +29590,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (22)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -29444,6 +29695,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 8.49, z: -4.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1425958425}
   m_RootOrder: 4
@@ -29539,6 +29791,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -29709,6 +29965,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1154124998}
   - {fileID: 666213222}
@@ -29749,6 +30006,7 @@ Transform:
   m_LocalRotation: {x: 0.46715376, y: -0, z: -0, w: 0.88417614}
   m_LocalPosition: {x: 0.108, y: 11.530001, z: 30.83}
   m_LocalScale: {x: 2.4882, y: 2.4882004, z: 2.4882004}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1425958425}
   m_RootOrder: 2
@@ -30490,6 +30748,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (43)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -30571,6 +30833,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (164)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -30825,6 +31091,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 48605867}
   m_Father: {fileID: 0}
@@ -31003,6 +31270,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: -0.0000003874302}
   m_LocalPosition: {x: 3.503806, y: 8.030426, z: -4.121534}
   m_LocalScale: {x: 1.1961709, y: 1.1961709, z: 1.1961709}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1545204208}
   m_RootOrder: 70
@@ -31018,6 +31286,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -31341,6 +31610,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.0000028014183}
   m_LocalPosition: {x: -3.62, y: -4.2170467, z: -7.23}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1201793681}
   m_RootOrder: 19
@@ -31356,6 +31626,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -31997,6 +32268,7 @@ Transform:
   m_LocalRotation: {x: -0.7933533, y: -0.0000019967556, z: 0.000002115965, w: -0.60876155}
   m_LocalPosition: {x: -6.62, y: -4.2170362, z: -7.23}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1201793681}
   m_RootOrder: 17
@@ -32012,6 +32284,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -32893,6 +33166,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (165)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -33365,6 +33642,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (48)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -33428,6 +33709,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -33500,6 +33785,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (37)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -33563,6 +33852,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (89)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -35144,6 +35437,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (45)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -35987,6 +36284,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (161)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -36323,6 +36624,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (51)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -36576,6 +36881,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.70710593, z: -0, w: 0.70710766}
   m_LocalPosition: {x: -7.749997, y: -4.2170467, z: -2.7600002}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1201793681}
   m_RootOrder: 24
@@ -36591,6 +36897,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -36762,6 +37069,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (52)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -36825,6 +37136,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (171)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -37041,6 +37356,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -38027,6 +38346,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -33.197662, y: -5.155326, z: 10.380779}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -39682,6 +40002,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (86)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -39750,6 +40074,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (162)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -40049,6 +40377,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (87)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -40497,6 +40829,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (15)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -40929,6 +41265,7 @@ Transform:
   m_LocalRotation: {x: -0.7933533, y: -0.0000019967556, z: 0.000002115965, w: -0.60876155}
   m_LocalPosition: {x: -0.62, y: -4.217041, z: -7.23}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1201793681}
   m_RootOrder: 15
@@ -40944,6 +41281,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -41110,6 +41448,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -41457,6 +41799,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (177)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -41665,6 +42011,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (33)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -41813,6 +42163,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (93)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -41892,6 +42246,10 @@ PrefabInstance:
     - target: {fileID: 2820461447547739449, guid: b0d5fd608489ca645a1755fee918d370, type: 3}
       propertyPath: m_Name
       value: Floor (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820461447547739449, guid: b0d5fd608489ca645a1755fee918d370, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2820461447547739449, guid: b0d5fd608489ca645a1755fee918d370, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -42182,6 +42540,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -42647,6 +43009,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (175)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -43647,6 +44013,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.000040031962, y: 9.88, z: 31.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1942180619}
   - {fileID: 2036649467}
@@ -43790,6 +44157,7 @@ Transform:
   m_LocalRotation: {x: -0.50000036, y: 0.50000036, z: -0.4999996, w: -0.49999967}
   m_LocalPosition: {x: -0.27, y: 8.31, z: 1.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1425958425}
   m_RootOrder: 6
@@ -43916,6 +44284,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (24)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -43979,6 +44351,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -44120,6 +44496,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (18)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -44185,6 +44565,10 @@ PrefabInstance:
       value: Scifi_Floor_18 (79)
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -44248,6 +44632,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (98)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -44364,6 +44752,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -7.91, y: 0, z: -3.25}
   m_LocalScale: {x: 1, y: 0.5, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1505066985}
   - {fileID: 301221055}
@@ -45022,6 +45411,10 @@ PrefabInstance:
       value: Back_Wall (21)
       objectReference: {fileID: 0}
     - target: {fileID: 4893897665740373132, guid: b7ac60955bcc5964bb42d98fef40028f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893897665740373132, guid: b7ac60955bcc5964bb42d98fef40028f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -45595,6 +45988,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_Name
       value: Scifi_Floor_18 (180)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: af65d779706b6482eb47ae86ce616206, type: 3}
       propertyPath: m_StaticEditorFlags

@@ -18,6 +18,9 @@ public class GameManager : MonoBehaviour
     }
 
     [SerializeField] private Transform[] waypoints;
+    [SerializeField] private float currentTimer, maxTimer;
+
+    public float SpawnTimer;
 
     private void Awake()
     {
@@ -33,12 +36,29 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        currentTimer += Time.deltaTime;
+        if (currentTimer > SpawnTimer)
+        {
+            SpawningEnemy();
+        }
     }
     
     //Passing the Waypoints Values to the AI Agent
     public Transform[] GetWaypoints()
     {
         return waypoints;
+    }
+
+    void SpawningEnemy()
+    {
+        GameObject EnemyAI = Spawn_Manager.Instance.GetPooledObject();
+        if (EnemyAI != null )
+        {
+            EnemyAI.gameObject.SetActive(true);
+            SpawnTimer = Random.Range(2, maxTimer);
+            currentTimer = 0;
+            Debug.Log("Spawning Timer reset");
+        }
+
     }
 }

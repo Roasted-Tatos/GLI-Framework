@@ -28,7 +28,23 @@ public class Enemy_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CalculateMovement();
+        switch(currentAiState)
+        {
+            case AiState.Walking:
+                if(currentAiState != AiState.Death)
+                {
+                    CalculateMovement();
+                }
+                break;
+            case AiState.Hiding:
+                if(currentAiState != AiState.Death)
+                {
+                    
+                }
+                break;
+            case AiState.Death:
+                break;
+        }
     }
 
     void CalculateMovement()

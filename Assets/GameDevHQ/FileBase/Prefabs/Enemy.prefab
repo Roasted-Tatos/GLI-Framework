@@ -116,6 +116,9 @@ MonoBehaviour:
   currentDestintation: 0
   currentAiState: 0
   _agent: {fileID: 5301879063676265545}
+  isHiding: 0
+  anim: {fileID: 5301879062041646072}
+  HidingSeconds: 0
 --- !u!195 &5301879063676265545
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -215,6 +218,11 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: f10e392824b77854e9373522eee4405c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b2eb117a27072f46b11bac53a374847, type: 3}
+--- !u!95 &5301879062041646072 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: 7b2eb117a27072f46b11bac53a374847, type: 3}
+  m_PrefabInstance: {fileID: 5301879062048941720}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5301879062049078290 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400010, guid: 7b2eb117a27072f46b11bac53a374847, type: 3}

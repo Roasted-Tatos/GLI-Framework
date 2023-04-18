@@ -16,6 +16,8 @@ public class Enemy_Movement : MonoBehaviour
     [SerializeField] private AiState currentAiState;
     [SerializeField] private NavMeshAgent _agent;
     [SerializeField] private bool isHiding;
+    [SerializeField] private Animator anim;
+    [SerializeField] private int animatorMovementSpeed;
 
     public float HidingSeconds;
     private Transform[] waypoints;
@@ -25,6 +27,9 @@ public class Enemy_Movement : MonoBehaviour
         waypoints = GameManager.Instance.GetWaypoints();
 
         currentAiState = AiState.Walking;
+
+        animatorMovementSpeed = Random.Range(1, 5);
+        _agent.speed = animatorMovementSpeed;
     }
 
     // Update is called once per frame
@@ -66,6 +71,7 @@ public class Enemy_Movement : MonoBehaviour
             else
             {
                 currentDestintation++;
+                anim.SetFloat("Speed", animatorMovementSpeed);
                 Debug.Log("Moving");
             }
             
@@ -83,8 +89,12 @@ public class Enemy_Movement : MonoBehaviour
     IEnumerator HidingTimer()
     {
         _agent.isStopped = true;
+        anim.SetBool("Hiding", true);
+        anim.SetFloat("Speed", animatorMovementSpeed);
         yield return new WaitForSeconds(HidingSeconds);
         _agent.isStopped = false;
+        anim.SetBool("Hiding", false);
+        anim.SetFloat("Speed", animatorMovementSpeed);
         isHiding = false;
         currentAiState = AiState.Walking;
     }
@@ -99,6 +109,7 @@ public class Enemy_Movement : MonoBehaviour
     void CalculateDeath()
     {
         _agent.isStopped = true;
+        anim.SetTrigger("Death");
     }
 
     public void DeathTrigger()

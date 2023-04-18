@@ -15,7 +15,9 @@ public class Enemy_Movement : MonoBehaviour
     [SerializeField] private int currentDestintation;
     [SerializeField] private AiState currentAiState;
     [SerializeField] private NavMeshAgent _agent;
+    [SerializeField] private bool isHiding;
 
+    public float HidingSeconds;
     private Transform[] waypoints;
 
     void Start()
@@ -39,10 +41,11 @@ public class Enemy_Movement : MonoBehaviour
             case AiState.Hiding:
                 if(currentAiState != AiState.Death)
                 {
-                    
+                    CalculateHiding();
                 }
                 break;
             case AiState.Death:
+                CalculateDeath();
                 break;
         }
     }
@@ -57,12 +60,50 @@ public class Enemy_Movement : MonoBehaviour
 
             if (currentDestintation == waypoints.Length -1)
             {
-                return;
+                HidingTrigger();
+                Debug.Log("Hiding");
             }
             else
             {
                 currentDestintation++;
+                Debug.Log("Moving");
             }
+            
         }
+    }
+    void CalculateHiding()
+    {
+        HidingSeconds = Random.Range(1f, 5f);
+        if(isHiding == true)
+        {
+            StartCoroutine(HidingTimer());
+        }
+    }
+
+    IEnumerator HidingTimer()
+    {
+        _agent.isStopped = true;
+        yield return new WaitForSeconds(HidingSeconds);
+        _agent.isStopped = false;
+        isHiding = false;
+        currentAiState = AiState.Walking;
+    }
+
+    void HidingTrigger()
+    {
+        isHiding = true;
+        Debug.Log("Hiding Triggered");
+        currentAiState = AiState.Hiding;
+    }
+
+    void CalculateDeath()
+    {
+        _agent.isStopped = true;
+    }
+
+    public void DeathTrigger()
+    {
+        currentAiState= AiState.Death;
+        GameManager.Instance.AddPoints();
     }
 }

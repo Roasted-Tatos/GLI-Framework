@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
             return instance;
         }
     }
-
+    [SerializeField] private int totalPoints;
     [SerializeField] private Transform[] waypoints;
     [SerializeField] private float currentTimer, maxTimer;
 
@@ -30,12 +30,14 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        totalPoints = 0;
         
     }
 
     // Update is called once per frame
     void Update()
     {
+        // Randomly Spawn AI Agents
         currentTimer += Time.deltaTime;
         if (currentTimer > SpawnTimer)
         {
@@ -57,8 +59,12 @@ public class GameManager : MonoBehaviour
             EnemyAI.gameObject.SetActive(true);
             SpawnTimer = Random.Range(2, maxTimer);
             currentTimer = 0;
-            Debug.Log("Spawning Timer reset");
         }
 
+    }
+
+    public void AddPoints()
+    {
+        totalPoints += 50;
     }
 }

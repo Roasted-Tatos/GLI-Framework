@@ -18,6 +18,7 @@ public class Spawn_Manager : MonoBehaviour
     }
 
     [SerializeField] private List<GameObject> spawnedEnemy;
+    //[SerializeField] private GameObject[] spawnedEnemy;
     [SerializeField] private GameObject EnemyAi;
     [SerializeField] private int spawnAmount;
     
@@ -32,6 +33,7 @@ public class Spawn_Manager : MonoBehaviour
         waypoints = GameManager.Instance.GetWaypoints();
 
         spawnedEnemy = new List<GameObject>();
+        //spawnedEnemy = new GameObject[spawnedEnemy.Length];
 
         for(int i = 0; i < spawnAmount; i++)
         {
@@ -52,5 +54,4 @@ public class Spawn_Manager : MonoBehaviour
         }
         return null;
     }
-
 }

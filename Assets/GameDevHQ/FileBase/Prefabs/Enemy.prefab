@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5301879063676265545}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,6 +118,7 @@ MonoBehaviour:
   _agent: {fileID: 5301879063676265545}
   isHiding: 0
   anim: {fileID: 5301879062041646072}
+  animatorMovementSpeed: 0
   HidingSeconds: 0
 --- !u!195 &5301879063676265545
 NavMeshAgent:

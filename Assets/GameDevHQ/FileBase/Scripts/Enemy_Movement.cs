@@ -15,7 +15,7 @@ public class Enemy_Movement : MonoBehaviour
     [SerializeField] private int currentDestintation;
     [SerializeField] private AiState currentAiState;
     [SerializeField] private NavMeshAgent _agent;
-    [SerializeField] private bool isHiding;
+    [SerializeField] private bool isHiding, isDead;
     [SerializeField] private Animator anim;
     [SerializeField] private int animatorMovementSpeed;
 
@@ -108,13 +108,18 @@ public class Enemy_Movement : MonoBehaviour
 
     void CalculateDeath()
     {
-        _agent.isStopped = true;
-        anim.SetTrigger("Death");
+        if (isDead == true)
+        {
+            _agent.isStopped = true;
+            anim.SetTrigger("Death");
+            isDead = false;
+        }
     }
 
     public void DeathTrigger()
     {
         currentAiState= AiState.Death;
         GameManager.Instance.AddPoints();
+        isDead = true;
     }
 }

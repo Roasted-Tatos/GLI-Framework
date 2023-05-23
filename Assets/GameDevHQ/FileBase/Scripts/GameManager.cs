@@ -1,3 +1,4 @@
+using GameDevHQ.FileBase.Plugins.FPS_Character_Controller;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,6 +21,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform[] waypoints;
     [SerializeField] private float currentTimer, maxTimer;
     [SerializeField] private GameObject winBanner, loseBanner;
+    [SerializeField] private bool isGamePaused;
+    [SerializeField] private FPS_Controller cameraController;
 
     public float SpawnTimer;
 
@@ -34,6 +37,7 @@ public class GameManager : MonoBehaviour
         totalPoints = 0;
         winBanner.SetActive(false);
         loseBanner.SetActive(false);
+        isGamePaused = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -82,6 +86,8 @@ public class GameManager : MonoBehaviour
         Debug.Log("Game Over");
         Time.timeScale = 0f;
         loseBanner.SetActive(true);
+        isGamePaused = true;
+        cameraController.enabled = false;
         Cursor.lockState = CursorLockMode.None;
     }
 
@@ -92,7 +98,14 @@ public class GameManager : MonoBehaviour
             Debug.Log("Win");
             Time.timeScale = 0f;
             winBanner.SetActive(true);
+            isGamePaused = true;
+            cameraController.enabled = false;
             Cursor.lockState = CursorLockMode.None;
         }
+    }
+
+    public bool isGameMenuPaused()
+    {
+        return isGamePaused;
     }
 }

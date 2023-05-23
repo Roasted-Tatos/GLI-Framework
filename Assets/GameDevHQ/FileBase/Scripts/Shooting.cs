@@ -1,3 +1,4 @@
+using GameDevHQ.FileBase.Plugins.FPS_Character_Controller;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,9 +11,11 @@ public class Shooting : MonoBehaviour
     [SerializeField] private AudioClip gunShotSFX,barrierSFX;
     [SerializeField] private Animator _anim;
 
+    private bool onGameMenu;
+
     private void Start()
     {
-        
+        onGameMenu = GameManager.Instance.isGameMenuPaused();
     }
 
     void Update()
@@ -20,7 +23,7 @@ public class Shooting : MonoBehaviour
         if(Mouse.current.leftButton.wasPressedThisFrame)
         {
             CalculatingAmmo();
-            if (Ammoleft > 0)
+            if (Ammoleft > 0 || onGameMenu == true)
             {
                 Shoot();
                 AudioSource audioSource = gameObject.AddComponent<AudioSource>();

@@ -1,3 +1,4 @@
+using GameDevHQ.FileBase.Plugins.FPS_Character_Controller;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -29210,6 +29210,8 @@ MonoBehaviour:
   maxTimer: 18
   winBanner: {fileID: 2090070498}
   loseBanner: {fileID: 216005080}
+  isGamePaused: 0
+  cameraController: {fileID: 1679786888}
   SpawnTimer: 0
 --- !u!4 &1325127190
 Transform:
@@ -37238,6 +37240,17 @@ MonoBehaviour:
   gunShotSFX: {fileID: 8300000, guid: badf73513f2e3be42bca91c4923f2775, type: 3}
   barrierSFX: {fileID: 8300000, guid: f3724eeed85c98f409e2d92ed9c36bed, type: 3}
   _anim: {fileID: 1679786890}
+--- !u!114 &1679786888 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3534858390546826023, guid: 964413c647e7ca441b457d50316abc87, type: 3}
+  m_PrefabInstance: {fileID: 1525713686}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679786880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 869cd17d97bb8984aa1ba012486f604a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &1679786890
 Animator:
   serializedVersion: 4

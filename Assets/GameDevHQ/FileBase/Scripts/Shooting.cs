@@ -5,7 +5,10 @@ using UnityEngine.InputSystem;
 public class Shooting : MonoBehaviour
 {
     [SerializeField] Camera mainCamera;
-    [SerializeField] Enemy_Movement AiScript;
+    //[SerializeField] Enemy_Movement AiScript;
+    [SerializeField] private int Ammoleft = 15;
+    [SerializeField] private AudioClip gunShotSFX,barrierSFX;
+    [SerializeField] private Animator _anim;
 
     private void Start()
     {
@@ -16,7 +19,15 @@ public class Shooting : MonoBehaviour
     {
         if(Mouse.current.leftButton.wasPressedThisFrame)
         {
-            Shoot();
+            CalculatingAmmo();
+            if (Ammoleft > 0)
+            {
+                Shoot();
+                AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+                audioSource.clip = gunShotSFX;
+                audioSource.Play();
+                _anim.SetTrigger("Fire");
+            }
         }
     }
 
@@ -34,6 +45,28 @@ public class Shooting : MonoBehaviour
                 Debug.Log("hit " + hitInfo.collider.name);
                 tmp.DeathTrigger();
             }
+            if(hitInfo.collider.CompareTag("Barrier"))
+            {
+                AudioSource audioSource = gameObject.AddComponent<AudioSource> ();
+                audioSource.clip = barrierSFX;
+                audioSource.Play();
+
+                Debug.Log("hit " + hitInfo.collider.name);
+            }
         }
+    }
+
+    void CalculatingAmmo()
+    {
+        Ammoleft--;
+        if(Ammoleft < 0)
+        {
+            Ammoleft = 0;
+        }
+    }
+
+    public int TotalAmmo()
+    {
+        return Ammoleft;
     }
 }

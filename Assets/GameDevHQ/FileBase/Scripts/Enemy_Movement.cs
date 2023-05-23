@@ -18,6 +18,7 @@ public class Enemy_Movement : MonoBehaviour
     [SerializeField] private bool isHiding, isDead;
     [SerializeField] private Animator anim;
     [SerializeField] private int animatorMovementSpeed;
+    [SerializeField] private AudioSource InjuredSFX;
 
     public float HidingSeconds;
     private Transform[] waypoints;
@@ -28,7 +29,7 @@ public class Enemy_Movement : MonoBehaviour
 
         currentAiState = AiState.Walking;
 
-        animatorMovementSpeed = Random.Range(1, 5);
+        animatorMovementSpeed = Random.Range(2, 5);
         _agent.speed = animatorMovementSpeed;
     }
 
@@ -113,6 +114,9 @@ public class Enemy_Movement : MonoBehaviour
             _agent.isStopped = true;
             anim.SetTrigger("Death");
             isDead = false;
+            InjuredSFX.Play();
+            gameObject.GetComponent<CapsuleCollider>().enabled= false;
+            Spawn_Manager.Instance.substractingEnemies();
         }
     }
 

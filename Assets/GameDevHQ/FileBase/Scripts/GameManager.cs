@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int totalPoints;
     [SerializeField] private Transform[] waypoints;
     [SerializeField] private float currentTimer, maxTimer;
+    [SerializeField] private GameObject winBanner, loseBanner;
 
     public float SpawnTimer;
 
@@ -31,7 +32,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         totalPoints = 0;
-        
+        winBanner.SetActive(false);
+        loseBanner.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
@@ -43,6 +46,7 @@ public class GameManager : MonoBehaviour
         {
             SpawningEnemy();
         }
+        WinGame();
     }
     
     //Passing the Waypoints Values to the AI Agent
@@ -66,5 +70,29 @@ public class GameManager : MonoBehaviour
     public void AddPoints()
     {
         totalPoints += 50;
+    }
+
+    public int totalScore()
+    {
+        return totalPoints;
+    }
+
+    public void GameOver()
+    {
+        Debug.Log("Game Over");
+        Time.timeScale = 0f;
+        loseBanner.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    public void WinGame()
+    {
+        if(totalPoints == 500)
+        {
+            Debug.Log("Win");
+            Time.timeScale = 0f;
+            winBanner.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 }

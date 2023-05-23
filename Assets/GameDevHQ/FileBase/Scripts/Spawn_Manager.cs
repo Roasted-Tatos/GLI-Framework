@@ -54,4 +54,13 @@ public class Spawn_Manager : MonoBehaviour
         }
         return null;
     }
+
+    public void substractingEnemies()
+    {
+        spawnAmount--;
+    }
+    public int TotalEnemiesLeft()
+    {
+        return spawnAmount;
+    }
 }

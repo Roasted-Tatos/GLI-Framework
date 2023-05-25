@@ -10,12 +10,14 @@ public class Shooting : MonoBehaviour
     [SerializeField] private int Ammoleft = 15;
     [SerializeField] private AudioClip gunShotSFX,barrierSFX;
     [SerializeField] private Animator _anim;
+    [SerializeField] private GameObject sparksVFX;
 
     private bool onGameMenu;
 
     private void Start()
     {
         onGameMenu = GameManager.Instance.isGameMenuPaused();
+        
     }
 
     void Update()
@@ -30,6 +32,7 @@ public class Shooting : MonoBehaviour
                 audioSource.clip = gunShotSFX;
                 audioSource.Play();
                 _anim.SetTrigger("Fire");
+                StartCoroutine(SparksCD());
             }
         }
     }
@@ -42,6 +45,7 @@ public class Shooting : MonoBehaviour
         if(Physics.Raycast(rayOrigin, out hitInfo))
         {
             Enemy_Movement tmp = hitInfo.collider.GetComponentInChildren<Enemy_Movement>();
+            Barrel_Explosion explosion = hitInfo.collider.GetComponent<Barrel_Explosion>();
 
             if (hitInfo.collider.CompareTag ("Enemy"))
             {
@@ -55,6 +59,10 @@ public class Shooting : MonoBehaviour
                 audioSource.Play();
 
                 Debug.Log("hit " + hitInfo.collider.name);
+            }
+            if(hitInfo.collider.CompareTag("Barrel"))
+            {
+                explosion.ExplosionTrigger();
             }
         }
     }
@@ -71,5 +79,12 @@ public class Shooting : MonoBehaviour
     public int TotalAmmo()
     {
         return Ammoleft;
+    }
+
+    IEnumerator SparksCD()
+    {
+        sparksVFX.SetActive(true);
+        yield return new WaitForSeconds(1);
+        sparksVFX.SetActive(false);
     }
 }

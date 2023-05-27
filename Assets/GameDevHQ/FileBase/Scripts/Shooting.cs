@@ -46,6 +46,7 @@ public class Shooting : MonoBehaviour
         {
             Enemy_Movement tmp = hitInfo.collider.GetComponentInChildren<Enemy_Movement>();
             Barrel_Explosion explosion = hitInfo.collider.GetComponent<Barrel_Explosion>();
+            Lazer_Barrier_Behavior laserBarrier = hitInfo.collider.GetComponent<Lazer_Barrier_Behavior>();
 
             if (hitInfo.collider.CompareTag ("Enemy"))
             {
@@ -63,6 +64,10 @@ public class Shooting : MonoBehaviour
             if(hitInfo.collider.CompareTag("Barrel"))
             {
                 explosion.ExplosionTrigger();
+            }
+            if(hitInfo.collider.CompareTag("Laser_Barrier"))
+            {
+                laserBarrier.BarrierHit();
             }
         }
     }

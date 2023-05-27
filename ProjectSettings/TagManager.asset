@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Barrier
   - Barrel
+  - Laser_Barrier
   layers:
   - Default
   - TransparentFX

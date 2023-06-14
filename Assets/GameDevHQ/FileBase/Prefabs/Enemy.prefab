@@ -252,6 +252,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Man_18_Unity
       objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 7b2eb117a27072f46b11bac53a374847, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 7b2eb117a27072f46b11bac53a374847, type: 3}
       propertyPath: m_RootOrder
       value: 0

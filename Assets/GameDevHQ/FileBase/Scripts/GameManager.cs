@@ -2,6 +2,7 @@ using GameDevHQ.FileBase.Plugins.FPS_Character_Controller;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,10 +18,11 @@ public class GameManager : MonoBehaviour
             return instance;
         }
     }
+
     [SerializeField] private int totalPoints;
     [SerializeField] private Transform[] waypoints;
     [SerializeField] private float currentTimer, maxTimer;
-    [SerializeField] private GameObject winBanner, loseBanner;
+    [SerializeField] private GameObject winBanner, loseBanner, pauseBanner;
     [SerializeField] private bool isGamePaused;
     [SerializeField] private FPS_Controller cameraController;
 
@@ -35,6 +37,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         totalPoints = 0;
+        Time.timeScale = 1f;
         winBanner.SetActive(false);
         loseBanner.SetActive(false);
         isGamePaused = false;
@@ -51,6 +54,8 @@ public class GameManager : MonoBehaviour
             SpawningEnemy();
         }
         WinGame();
+
+        PausedGame();
     }
     
     //Passing the Waypoints Values to the AI Agent
@@ -107,5 +112,28 @@ public class GameManager : MonoBehaviour
     public bool isGameMenuPaused()
     {
         return isGamePaused;
+    }
+
+    private void PausedGame()
+    {
+        if(Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            Debug.Log("Game is Paused");
+            isGamePaused = true;
+            Time.timeScale = 0f;
+            pauseBanner.SetActive(true);
+            cameraController.enabled = false;
+            Cursor.lockState = CursorLockMode.None;
+        }
+    }
+
+    public void ResumeGame()
+    {
+        Debug.Log("Resumed Game");
+        isGamePaused = false;
+        Time.timeScale = 1f;
+        pauseBanner.SetActive(false);
+        cameraController.enabled = true;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }

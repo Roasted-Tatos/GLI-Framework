@@ -29,7 +29,7 @@ public class Enemy_Movement : MonoBehaviour
 
         currentAiState = AiState.Walking;
 
-        animatorMovementSpeed = Random.Range(2, 5);
+        animatorMovementSpeed = Random.Range(3, 5);
         _agent.speed = animatorMovementSpeed;
     }
 
@@ -69,7 +69,7 @@ public class Enemy_Movement : MonoBehaviour
                 HidingTrigger();
                 Debug.Log("Hiding");
             }
-            else
+            else  
             {
                 currentDestintation++;
                 anim.SetFloat("Speed", animatorMovementSpeed);
@@ -80,7 +80,7 @@ public class Enemy_Movement : MonoBehaviour
     }
     void CalculateHiding()
     {
-        HidingSeconds = Random.Range(1f, 5f);
+        HidingSeconds = Random.Range(3f, 5f);
         if(isHiding == true)
         {
             StartCoroutine(HidingTimer());
@@ -117,6 +117,7 @@ public class Enemy_Movement : MonoBehaviour
             InjuredSFX.Play();
             gameObject.GetComponent<CapsuleCollider>().enabled= false;
             Spawn_Manager.Instance.substractingEnemies();
+            _agent.enabled = false;
         }
     }
 

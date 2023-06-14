@@ -35,6 +35,15 @@ public class Shooting : MonoBehaviour
                 StartCoroutine(SparksCD());
             }
         }
+
+        if(Keyboard.current.rKey.wasPressedThisFrame)
+        {
+            Ammoleft += 15;
+            if(Ammoleft > 15)
+            {
+                Ammoleft = 15;
+            }
+        }
     }
 
     void Shoot()
